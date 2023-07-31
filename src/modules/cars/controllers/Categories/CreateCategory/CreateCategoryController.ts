@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { CreateCategoryService } from "../../services/createCategoryService";
+import { CreateCategoryService } from "../../../services/Categories/CreateCategoryService";
 
 class CreateCategoryController {
   // eslint-disable-next-line prettier/prettier

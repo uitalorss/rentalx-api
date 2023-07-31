@@ -1,5 +1,5 @@
-import { CategoriesRepository } from "../../repositories/CategoriesRepository";
-import { CreateCategoryService } from "../../services/createCategoryService";
+import { CategoriesRepository } from "../../../repositories/CategoriesRepository";
+import { CreateCategoryService } from "../../../services/Categories/CreateCategoryService";
 import { CreateCategoryController } from "./CreateCategoryController";
 
 const categoriesRepository = CategoriesRepository.getInstance();

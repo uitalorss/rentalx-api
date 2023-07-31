@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { ListCategoriesService } from "../../services/ListCategoriesService";
+import { ListCategoriesService } from "../../../services/Categories/ListCategoriesService";
 
 class ListCategoriesController {
   // eslint-disable-next-line prettier/prettier
