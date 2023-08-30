@@ -8,8 +8,8 @@ interface IRequest {
 export class CreateCategoryService {
   // eslint-disable-next-line prettier/prettier
   constructor(private repository: ICategoriesRepository) { }
-  execute({ name, description }: IRequest): void {
-    const categoryAlreadyExists = this.repository.findByName(name);
+  async execute({ name, description }: IRequest): Promise<void> {
+    const categoryAlreadyExists = await this.repository.findByName(name);
     if (categoryAlreadyExists) {
       throw new Error("Categoria já existe");
     }

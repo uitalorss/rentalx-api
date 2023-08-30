@@ -2,7 +2,7 @@ import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 import { v4 as uuidv4 } from "uuid";
 
 @Entity("categories")
-export class Category {
+class Category {
   @PrimaryColumn()
   id: string;
 
@@ -21,3 +21,5 @@ export class Category {
     }
   }
 }
+
+export default Category;
